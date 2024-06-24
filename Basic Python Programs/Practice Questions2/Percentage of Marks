@@ -1,0 +1,19 @@
+#1: Write program to input roll  number, name,and 4 diff marks of 5 friends.Find total and percentage
+
+def Marks(r,n):
+    per=0
+    total=0
+    eng=int(input("Enter Marks for english:"))
+    mal=int(input("Enter Marks for Malayalam:"))
+    math=int(input("Enter Marks for Mathematics:"))
+    sci=int(input("Enter Marks for science:"))
+    total = eng + mal + math + sci
+    print(r,":", n)
+    print("total marks:", total)
+    per=total/4
+    print("Percentage: ",per,"%")
+
+for i in range(1,6):
+    roll = int(input("Enter roll number:"))
+    name = str(input("Enter  name:"))
+    Marks(roll,name)
