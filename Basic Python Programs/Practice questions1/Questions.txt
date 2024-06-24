@@ -1,0 +1,20 @@
+1. Write a Python program to print "Hello, World!" to the screen.
+2. Write a program to take user input (their name) and display it on the screen.
+3. Create a Python program to calculate the sum of two numbers.
+4. Write a program to check if a number is even or odd.
+5. Create a program that calculates the square of a number.
+6. Write a Python program to find the maximum of two numbers.
+7. Write a program that prints the numbers from 1 to 10.
+8. Create a Python program to print the multiplication table of a given number.
+9. Write a program to check if a given number is positive, negative, or zero.
+10. Create a program that calculates the factorial of a number.
+11. Write a Python program to check if a number is prime.
+12. Create a program to swap the values of two variables.
+13. Write a program to calculate the average of a list of numbers.
+14. Create a program that finds the largest number in a list.
+15. Write a Python program to reverse a string.
+16. Create a program to find the length of a string.
+17. Write a program to check if a string is a palindrome.
+18. Create a program to count the number of vowels in a string.
+19. Write a Python program to find the sum of all even numbers from 1 to 100.
+20. Create a program to check if a given year is a leap year.
