@@ -1,0 +1,10 @@
+6:write a prgm to read 5 real numbers and find their avg(use while loop)
+
+sum=0.0
+print("enter 5 numbers:")
+i=1           #initialization
+while(i<=5): #Condition
+    num=float(input())
+    sum+=num
+    i+=1
+print("average: ",sum/5)
