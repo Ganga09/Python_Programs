@@ -1,0 +1,20 @@
+# 3. Write python program that asks the user for seven numbers.
+# then print the total of these entries, the number of positives entries, the number of entries equal to zero and number of negative entries.
+
+sum=0
+pflag=0
+nflag=0
+zflag=0
+print("enter 7 numbers")
+
+for i in range(1,8):
+    n=int(input(""))
+    sum=sum+n
+    if (n==0):
+        zflag+=1
+    elif(n>0):
+        pflag+=1
+    else:
+        nflag+=1
+
+print("Sum:",sum," Count of numbers =0:",zflag," count of negtive number:",nflag," Count of positive numbers:",pflag)
