@@ -1,0 +1,29 @@
+# Q2.employee's number, name and salary. calculate the DA HRA and gross salary
+#      salary       DA           HRA
+#     <=1000       30%           10%
+#     <=1500       40%           15%
+#     <=2000       50%           20%
+#      >2000       60%           25%
+# (gross= salary+DA+HRA)
+
+id=int(input("Enter employee id:"))
+name=str(input("Enter name"))
+sal=int(input("enter salary"))
+print("....................Salary details.......................")
+print("Emp id:", id, " Name:", name)
+if(sal<2000):
+    da=sal*0.6
+    hra=sal*0.25
+    print("HRA: ",hra," DA:",da, " Goss:",sal+hra+da)
+elif(1000<sal<=1500):
+    da = sal * 0.4
+    hra = sal * 0.15
+    print("HRA: ", hra, " DA:", da, " Goss:", sal + hra + da)
+elif (1500 < sal <= 2000):
+    da = sal * 0.5
+    hra = sal * 0.2
+    print("HRA: ", hra, " DA:", da, " Goss:", sal + hra + da)
+else:
+    da = sal * 0.3
+    hra = sal * 0.10
+    print("HRA: ", hra, " DA:", da, " Goss:", sal + hra + da)
