@@ -1,0 +1,10 @@
+#5:find ticket fair according to code of the bus:
+#  code                  fair
+#  d                       4
+#  r                       5
+#  w                      10
+#  c                      12
+
+dict1={'d':4,'r':5,'w':10,'c':12}
+code=input("enter code (d,r,w,c):")
+print("For code:",code,"=> Fair:",dict1[code])
