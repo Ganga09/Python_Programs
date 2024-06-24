@@ -1,1 +1,42 @@
-# Write a Python program to print "Hello, World!" to the screen.
+#1. Write a Python program to print "Hello, World!" to the screen.
+print("Hello, World!")
+
+#2. Write a program to take user input (their name) and display it on the screen.
+name=input("your name")
+print(name)
+
+#3. Create a Python program to calculate the sum of two numbers.
+num1=int(input("Enter a number"))
+num2=int(input("Enter secomd number"))
+print("sum=", num1+num2)
+
+# 4 Write a program to check if a number is even or odd.
+choice=int(input("enter the number of your choice >0:"))
+if(choice%2==0):
+    print(" the number is even")
+else:
+    print("the number is odd")
+
+#5.  Create a program that calculates the square of a number.
+number=int(input("enter the number of your choice >0:"))
+print("square=",number**2)
+
+# 6. Write a Python program to find the maximum of two numbers.
+
+number1=int(input("enter the number:"))
+number2=int(input("enter the number:"))
+if(number1>number2):
+    print(number1,"is greater")
+elif(number2>number1):
+    print(number2, "is greater")
+else:
+    print("equal")
+
+#7. Write a program that prints the numbers from 1 to 10
+for i in range(1,11):
+    print(i)
+
+#8.  Create a Python program to print the multiplication table of a given number.
+numm=int(input("enter a number:"))
+for j in range(1,11):
+    print(j,"*",numm,numm*j)
