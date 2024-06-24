@@ -1,0 +1,21 @@
+1.Write program to input roll  number, name,and 4 diff marks of 5 friends.Find total and percentage
+2:Write program to enter employee's number, name and salary. calculate the DA HRA and gross salary
+     salary       DA           HRA
+    <=1000       30%           10%
+    <=1500       40%           15%
+    <=2000       50%           20%
+     >2000       60%           25%
+
+gross= salary+DA+HRA
+
+3: Write python program that asks the user for seven numbers .then print the total of these entries, the number of positives entries,
+   the number of entries equal to zero and number of negative entries.
+4:write a program to find the sum of n natural numbers odd numbers and even numbers
+5:find ticket fair according to code of the bus:
+  code                  fair
+  d                       4
+  r                       5
+  w                      10
+  c                      12
+
+  6:write a prgm to read 5 real numbers and find their avg(use while loop)
