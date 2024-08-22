@@ -1,0 +1,69 @@
+import time
+import random
+
+# Welcoming the user
+name = input("Hello there! What is your name? ")
+
+print(f"Welcome, {name}! It's time to play Hangman! Get ready to test your word-guessing skills.")
+
+# Wait for 1 second
+time.sleep(1)
+
+print("Alright, let's get started! You have a limited number of guesses, so think carefully.")
+time.sleep(0.5)
+
+# Set a list of possible secret words
+words = ["secret", "python", "california", "challenge", "programming", "serendipity","camouflage","laptop","jamming"] # any list of words
+
+# Choose a random word from the list
+word = random.choice(words)
+
+# Initialize a variable to store the player's guesses
+guesses = ''
+
+# Set the number of turns the player has to guess the word
+turns = 10
+
+# Start the game loop
+while turns > 0:         
+    # Initialize the failed counter
+    failed = 0             
+
+    # Check each character in the secret word
+    for char in word:      
+        if char in guesses:    
+            # If the guessed character is in the word, print it out
+            print(char, end="")    
+        else:
+            # If the character is not in the guesses, print a dash
+            print("_", end="")     
+            # Increment the failed counter for each missed character
+            failed += 1    
+
+    # Check if all characters were guessed
+    if failed == 0:        
+        # If there were no failed attempts, the player won
+        print("\nCongratulations, you've won the game!")
+        break            
+
+    # Prompt the user to guess a character
+    guess = input("\nGuess a character: ") 
+
+    # Add the guessed character to the list of guesses
+    guesses += guess                    
+
+    # Check if the guessed character is not in the secret word
+    if guess not in word:  
+        # Decrease the number of remaining turns
+        turns -= 1        
+ 
+        # Notify the player of the wrong guess
+        print("Oops! That letter isn't in the word.")
+ 
+        # Show the number of remaining guesses
+        print(f"You have {turns} more guesses left.")
+ 
+        # If the player has no more turns left
+        if turns == 0:           
+            # The player loses the game
+            print(f"You've run out of guesses. You lose! The word was: {word}")
